@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overwatchseleccionderol"
+    android:gravity="center"
+    tools:context=".Informacion">
+
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="107dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bordebotonesback"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="229dp"
+        android:layout_height="91dp"
+        android:background="@drawable/bordetextview"
+        android:gravity="center"
+        android:text="  Seleccion de Rol  "
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="317dp"
+        android:layout_height="361dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.262"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="336dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="131dp">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonTank"
+                    android:layout_width="128dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/bordedebotones"
+                    android:text="Tank"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="61dp"
+                    tools:layout_editor_absoluteY="243dp" />
+
+                <Button
+                    android:id="@+id/buttonDps"
+                    android:layout_width="128dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bordedebotones"
+                    android:text="DPS"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="231dp"
+                    tools:layout_editor_absoluteY="243dp" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"></FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp">
+
+                <Button
+                    android:id="@+id/buttonALL"
+                    android:layout_width="128dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/bordedebotones"
+                    android:text="ALL"
+                    android:textColor="#000000"
+                    app:rippleColor="#000000"
+                    tools:layout_editor_absoluteX="231dp"
+                    tools:layout_editor_absoluteY="415dp" />
+
+                <Button
+                    android:id="@+id/buttonHealer"
+                    android:layout_width="128dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bordedebotones"
+                    android:text="Healer"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="61dp"
+                    tools:layout_editor_absoluteY="415dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondofigmanegroyazul"
+    tools:context=".HistoriaFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="303dp"
+        android:layout_height="554dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexDirection="column"
+            app:flexWrap="wrap"
+            app:justifyContent="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.081"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roadhog es un asesino despiadado que se ha ganado su reputación de criminal cruel aficionado a la destrucción."
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tras la Crisis Ómnica, el gobierno decidió conceder el omnium australiano y el área circundante a esos ómnicos que casi habían destruido su país, esperando conseguir así una paz duradera. Este acuerdo condenó al destierro a Mako Rutledge y a un gran número de residentes de la zona: un grupo variopinto de supervivientes, granjeros solares y gente que solo quería que la dejaran en paz."
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Furiosos por haber perdido su hogar, Mako y los otros optaron por la rebelión violenta. Formaron el Frente de Liberación Australiano y atacaron el omnium y a su población de robots para recuperar las tierras que les habían arrebatado. Los incidentes fueron aumentando hasta que los rebeldes sabotearon el núcleo de fusión del omnium, lo que provocó una explosión que destruyó el complejo, irradió la región y llenó el desierto australiano de metal retorcido y escombros en kilómetros a la redonda."
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mako vio cómo su hogar se convertía en un erial apocalíptico, y eso lo cambió para siempre."
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para adaptarse a su entorno, se puso una máscara y se dedicó a recorrer las autopistas abandonadas del desierto australiano en su motocicleta desvencijada. Poco a poco, su humanidad desapareció. Los últimos vestigios de Mako se desvanecieron, y nació el asesino implacable Roadhog."
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonBack3"
+        android:layout_width="107dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bordebotonesback"
+        android:text="Back"
+
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

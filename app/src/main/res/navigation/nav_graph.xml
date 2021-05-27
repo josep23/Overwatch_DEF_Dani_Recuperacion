@@ -85,6 +85,9 @@
         <action
             android:id="@+id/action_DPS_to_informacion"
             app:destination="@id/informacion" />
+        <action
+            android:id="@+id/action_DPS_to_roadhogFragment"
+            app:destination="@id/roadhogFragment" />
     </fragment>
     <fragment
         android:id="@+id/tank"
@@ -97,6 +100,9 @@
         <action
             android:id="@+id/action_tank_to_informacion"
             app:destination="@id/informacion" />
+        <action
+            android:id="@+id/action_tank_to_roadhogFragment"
+            app:destination="@id/roadhogFragment" />
     </fragment>
     <fragment
         android:id="@+id/all"
@@ -109,6 +115,9 @@
         <action
             android:id="@+id/action_all_to_informacion"
             app:destination="@id/informacion" />
+        <action
+            android:id="@+id/action_all_to_roadhogFragment"
+            app:destination="@id/roadhogFragment" />
     </fragment>
     <fragment
         android:id="@+id/healerFragment"
@@ -121,6 +130,9 @@
         <action
             android:id="@+id/action_healerFragment_to_informacion"
             app:destination="@id/informacion" />
+        <action
+            android:id="@+id/action_healerFragment_to_roadhogFragment"
+            app:destination="@id/roadhogFragment" />
     </fragment>
     <fragment
         android:id="@+id/buscarGrupo"
@@ -193,5 +205,9 @@
         android:id="@+id/hoghistoriaFragment"
         android:name="com.example.overwatch_def.hoghistoriaFragment"
         android:label="fragment_hoghistoria"
-        tools:layout="@layout/fragment_hoghistoria" />
+        tools:layout="@layout/fragment_hoghistoria" >
+        <action
+            android:id="@+id/action_hoghistoriaFragment_to_roadhogFragment"
+            app:destination="@id/roadhogFragment" />
+    </fragment>
 </navigation>

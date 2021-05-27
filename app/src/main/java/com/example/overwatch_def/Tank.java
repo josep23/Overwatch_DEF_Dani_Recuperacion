@@ -72,23 +72,23 @@ public class Tank extends Fragment {
         });binding.imageButtonAna19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_tank_to_anaFragment);
+                navController.navigate(R.id.action_tank_to_roadhogFragment);
             }
         });binding.imageButtonAna20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_tank_to_anaFragment);
+                navController.navigate(R.id.action_tank_to_roadhogFragment);
             }
         });
         binding.imageButtonAna21.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_tank_to_anaFragment);
+                navController.navigate(R.id.action_tank_to_roadhogFragment);
             }
         });binding.imageButtonAna22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_tank_to_anaFragment);
+                navController.navigate(R.id.action_tank_to_roadhogFragment);
             }
         });binding.imageButtonAna23.setOnClickListener(new View.OnClickListener() {
             @Override

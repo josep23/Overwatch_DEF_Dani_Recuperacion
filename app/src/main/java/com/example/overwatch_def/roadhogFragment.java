@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 
 import com.example.overwatch_def.databinding.FragmentAnaBinding;
 import com.example.overwatch_def.databinding.FragmentRoadhogBinding;
+import com.thekhaeng.pushdownanim.PushDownAnim;
 
 public class roadhogFragment extends Fragment {
     NavController navController;
@@ -50,12 +51,12 @@ public class roadhogFragment extends Fragment {
             dialog.show();
         });
         binding.ultimatehog.setOnClickListener(v -> {
-            dialog.setContentView(R.layout.habilidad2hog);
+            dialog.setContentView(R.layout.ultimatehog);
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             dialog.show();
         });
         binding.gancho.setOnClickListener(v -> {
-            dialog.setContentView(R.layout.ultimatehog);
+            dialog.setContentView(R.layout.habilidad2hog);
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             dialog.show();
         });
@@ -65,7 +66,7 @@ public class roadhogFragment extends Fragment {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        navController.navigate(R.id.action_anaFragment_to_informacion);
+                        navController.navigate(R.id.action_roadhogFragment_to_informacion);
                     }
                 });
         PushDownAnim.setPushDownAnimTo(binding.buttonhistoriahog).setScale(PushDownAnim.MODE_SCALE,0.89f)
@@ -74,7 +75,7 @@ public class roadhogFragment extends Fragment {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        navController.navigate(R.id.action_roadhogFragment_to_informacion);
+                        navController.navigate(R.id.action_roadhogFragment_to_hoghistoriaFragment);
                     }
                 });
 

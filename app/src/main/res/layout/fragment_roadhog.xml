@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondofigmanegroyazul"
-    tools:context=".RoadhogFragment">
+    tools:context=".roadhogFragment">
 
     <ImageView
         android:id="@+id/imageButtonhog1"

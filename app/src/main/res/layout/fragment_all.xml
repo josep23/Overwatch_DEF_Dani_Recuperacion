@@ -326,8 +326,7 @@
         android:id="@+id/buttonBack3"
         android:layout_width="107dp"
         android:layout_height="44dp"
-        android:background="@drawable/bordebotonesback"
-        android:text="Back"
+        android:background="@drawable/flecha_back"
 
 
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"

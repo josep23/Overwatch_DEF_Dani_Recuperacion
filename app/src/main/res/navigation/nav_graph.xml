@@ -141,10 +141,10 @@
         tools:layout="@layout/fragment_buscar_grupo" >
 
         <action
-            android:id="@+id/action_buscarGrupo_to_login2"
+            android:id="@+id/action_buscarGrupo_to_login"
             app:destination="@id/login" />
         <action
-            android:id="@+id/action_buscarGrupo_to_teamFragment2"
+            android:id="@+id/action_buscarGrupo_to_teamFragment"
             app:destination="@id/teamFragment" />
     </fragment>
     <fragment

@@ -86,7 +86,7 @@ public class BuscarGrupo extends Fragment {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        navController.navigate(R.id.action_buscarGrupo_to_login2);
+                        navController.navigate(R.id.action_buscarGrupo_to_login);
                     }
                 });
         PushDownAnim.setPushDownAnimTo(binding.buttonGrupos).setScale(PushDownAnim.MODE_SCALE,0.89f)
@@ -95,7 +95,7 @@ public class BuscarGrupo extends Fragment {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        navController.navigate(R.id.action_buscarGrupo_to_teamFragment2);
+                        navController.navigate(R.id.action_buscarGrupo_to_teamFragment);
                     }
                 });
     }

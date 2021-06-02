@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondofigmanegroyazul"
     tools:context=".roadhogFragment">
-
     <ImageView
         android:id="@+id/imageButtonhog1"
         android:layout_width="161dp"

@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.262"
+        app:layout_constraintVertical_bias="0.120000005"
         tools:ignore="MissingConstraints">
 
 
@@ -58,14 +58,14 @@
             tools:layout_editor_absoluteY="131dp">
 
 
-
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="72dp">
 
                 <FrameLayout
                     android:layout_width="126dp"
                     android:layout_height="match_parent">
+
                     <Button
                         android:id="@+id/buttonTank"
                         android:layout_width="128dp"
@@ -76,12 +76,13 @@
                         tools:layout_editor_absoluteX="61dp"
                         tools:layout_editor_absoluteY="243dp" />
 
-                </FrameLayout>
+                    </FrameLayout>
 
                 <FrameLayout
-                android:layout_width="126dp"
-                android:layout_height="match_parent"
+                    android:layout_width="126dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="right">
+
                     <Button
                         android:id="@+id/buttonDps"
                         android:layout_width="128dp"
@@ -108,28 +109,33 @@
                     android:src="@drawable/dpsfondotransparente" />
 
 
-
-
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"></FrameLayout>
+                android:layout_height="167dp"></FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="125dp">
-
-                <Button
-                    android:id="@+id/buttonALL"
-                    android:layout_width="128dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/bordedebotones"
-                    android:text="ALL"
-                    android:textColor="#000000"
-                    app:rippleColor="#000000"
-                    tools:layout_editor_absoluteX="231dp"
-                    tools:layout_editor_absoluteY="415dp" />
+                android:layout_height="74dp">
+                <FrameLayout
+                    android:layout_width="126dp"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/buttonALL"
+                        android:layout_width="128dp"
+                        android:layout_height="72dp"
+                        android:background="@drawable/bordedebotones"
+                        android:text="ALL"
+                        android:textColor="#000000"
+                        app:rippleColor="#000000"
+                        tools:layout_editor_absoluteX="231dp"
+                        tools:layout_editor_absoluteY="415dp" />
+                </FrameLayout>
+                <FrameLayout
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
 
                 <Button
                     android:id="@+id/buttonHealer"
@@ -141,7 +147,19 @@
                     android:textColor="#000000"
                     tools:layout_editor_absoluteX="61dp"
                     tools:layout_editor_absoluteY="415dp" />
+                </FrameLayout>
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/poli1" />
 
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:src="@drawable/healerfondotransparente" />
             </FrameLayout>
         </LinearLayout>
     </FrameLayout>

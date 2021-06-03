@@ -82,6 +82,5 @@ public class AnaFragment extends Fragment {
                         navController.navigate(R.id.action_anaFragment_to_historiaFragment);
                     }
                 });
-
     }
 }

@@ -1,27 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    tools:ignore="MissingClass">
-
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/textoblanco"
-        android:gravity="center"
-        android:text="GRANADA BIÓTICA
-Ana lanza una bomba biótica que inflige daño a los enemigos y cura a los aliados en una pequeña área de efecto. Durante un breve período de tiempo, los aliados afectados reciben sanación aumentada de todas las fuentes y los enemigos atrapados en la explosión no se pueden curar."
-        android:textColor="#000000" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondofigmanegroyazul"
+    tools:context=".roadhogFragment">
 
 
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="350dp"
+        android:layout_height="312dp"
+        android:background="@drawable/botonana"
+        android:backgroundTint="#2e4465"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-</RelativeLayout>
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="309dp"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:justifyContent="center">
+
+            <FrameLayout
+                android:layout_width="283dp"
+                android:layout_height="67dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="283dp"
+                    android:layout_height="67dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/screen_background_dark"
+                    android:backgroundTint="#2e4465"
+                    android:gravity="center|center_vertical"
+                    android:text="GRANADA BIÓTICA "
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="283dp"
+                android:layout_height="91dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="283dp"
+                    android:layout_height="91dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/screen_background_dark"
+                    android:backgroundTint="#2e4465"
+                    android:gravity="center_vertical"
+                    android:text="Ana lanza una bomba biótica que inflige daño a los enemigos y cura a los aliados en una pequeña área de efecto. "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="283dp"
+                android:layout_height="124dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="283dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/screen_background_dark"
+                    android:backgroundTint="#2e4465"
+                    android:gravity="center_vertical"
+                    android:text="Durante un breve período de tiempo, los aliados afectados reciben sanación aumentada de todas las fuentes y los enemigos atrapados en la explosión no se pueden curar."
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </FrameLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

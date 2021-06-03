@@ -6,72 +6,94 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondofigmanegroyazul"
     tools:context=".roadhogFragment">
+
+
     <Button
         android:id="@+id/buttonBack3"
         android:layout_width="107dp"
         android:layout_height="44dp"
         android:background="@drawable/flecha_back"
-        app:layout_constraintBottom_toTopOf="@+id/imageButtonhog1"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333"
+        app:layout_constraintVertical_bias="0.38"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageButtonhog1"
-        android:layout_width="161dp"
-        android:layout_height="217dp"
-        android:clickable="true"
-        android:src="@drawable/hog"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/buttonhistoriahog"
-        android:layout_width="114dp"
-        android:layout_height="48dp"
-        android:background="@drawable/botonana"
-        android:text="HISTORIA"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/buttonresumenhog"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonhog1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
-
-    <Button
-        android:id="@+id/buttonresumenhog"
-        android:layout_width="114dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="44dp"
-        android:background="@drawable/botonana"
-        android:text="Resumen"
-        android:textColor="#FFFFFF"
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="326dp"
+        android:layout_height="250dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonhog1"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageButtonhog1"
+                android:layout_width="161dp"
+                android:layout_height="217dp"
+                android:clickable="true"
+                android:src="@drawable/hog"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.204"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.689"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/buttonhistoriahog"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center|right"
+                android:background="@drawable/botonana"
+                android:text="HISTORIA"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.406"
+                app:layout_constraintStart_toEndOf="@+id/imageButtonhog1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.322" />
+
+            <Button
+                android:id="@+id/buttonresumenhog"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/botonana"
+                android:text="Resumen"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.406"
+                app:layout_constraintStart_toEndOf="@+id/imageButtonhog1"
+                app:layout_constraintTop_toBottomOf="@+id/buttonhistoriahog"
+                app:layout_constraintVertical_bias="0.535" />
+
+        </FrameLayout>
+    </ScrollView>
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="368dp"
-        android:layout_height="335dp"
+        android:layout_width="469dp"
+        android:layout_height="290dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.241"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762"
+        app:layout_constraintVertical_bias="0.761"
         tools:ignore="MissingConstraints">
 
         <com.google.android.flexbox.FlexboxLayout
@@ -89,6 +111,7 @@
                 android:id="@+id/cantimplora"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="right"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="52dp"
                 android:scaleType="centerInside"
@@ -109,6 +132,7 @@
                 android:id="@+id/ultimatehog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="right"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="52dp"
                 android:scaleType="centerInside"
@@ -126,4 +150,6 @@
 
         </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

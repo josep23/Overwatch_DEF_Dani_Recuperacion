@@ -1,27 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    tools:ignore="MissingClass">
-
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/textoblanco"
-        android:gravity="center"
-        android:text="RIFLE BIÓTICO
-El rifle de Ana dispara dardos que pueden restaurar la salud a sus aliados o infligir daño a sus enemigos. Además, puede usar la mira del rifle para apuntar mejor a sus objetivos y realizar disparos muy precisos."
-        android:textColor="#000000" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondofigmanegroyazul"
+    tools:context=".roadhogFragment">
 
 
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="347dp"
+        android:layout_height="287dp"
+        android:background="@drawable/botonana"
+        android:backgroundTint="#2e4465"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-</RelativeLayout>
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="318dp"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:justifyContent="center">
+
+            <FrameLayout
+                android:layout_width="283dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="283dp"
+                    android:layout_height="67dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/screen_background_dark"
+                    android:backgroundTint="#2e4465"
+                    android:gravity="center|center_vertical"
+                    android:text="RIFLE BIÓTICO "
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="283dp"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="283dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/screen_background_dark"
+                    android:backgroundTint="#2e4465"
+                    android:gravity="center_vertical"
+                    android:text="El rifle de Ana dispara dardos que pueden restaurar la salud a sus aliados o infligir daño a sus enemigos. "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="283dp"
+                android:layout_height="124dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="283dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/screen_background_dark"
+                    android:backgroundTint="#2e4465"
+                    android:gravity="center_vertical"
+                    android:text="Además, puede usar la mira del rifle para apuntar mejor a sus objetivos y realizar disparos muy precisos."
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </FrameLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

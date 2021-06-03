@@ -42,12 +42,26 @@
                 android:text="Roadhog es un asesino despiadado que se ha ganado su reputación de criminal cruel aficionado a la destrucción."
                 tools:layout_editor_absoluteX="163dp"
                 tools:layout_editor_absoluteY="313dp" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tras la Crisis Ómnica, el gobierno decidió conceder el omnium australiano y el área circundante a esos ómnicos que casi habían destruido su país, esperando conseguir así una paz duradera. Este acuerdo condenó al destierro a Mako Rutledge y a un gran número de residentes de la zona: un grupo variopinto de supervivientes, granjeros solares y gente que solo quería que la dejaran en paz."
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
                 tools:layout_editor_absoluteX="163dp"
                 tools:layout_editor_absoluteY="313dp" />
 
@@ -58,12 +72,27 @@
                 android:text="Furiosos por haber perdido su hogar, Mako y los otros optaron por la rebelión violenta. Formaron el Frente de Liberación Australiano y atacaron el omnium y a su población de robots para recuperar las tierras que les habían arrebatado. Los incidentes fueron aumentando hasta que los rebeldes sabotearon el núcleo de fusión del omnium, lo que provocó una explosión que destruyó el complejo, irradió la región y llenó el desierto australiano de metal retorcido y escombros en kilómetros a la redonda."
                 tools:layout_editor_absoluteX="163dp"
                 tools:layout_editor_absoluteY="313dp" />
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
+
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mako vio cómo su hogar se convertía en un erial apocalíptico, y eso lo cambió para siempre."
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="313dp" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
                 tools:layout_editor_absoluteX="163dp"
                 tools:layout_editor_absoluteY="313dp" />
 
